@@ -1,0 +1,38 @@
+/* Product pages: photo galleries + lightbox (loads after index.css) */
+body.product-access-pending main { visibility: hidden; }
+.page-head { text-align: center; margin-bottom: 20px; }
+.page-head p { max-width: 700px; margin: 0 auto 12px; }
+.back-link { display: inline-block; margin-bottom: 15px; color: #2e7d32; font-weight: bold; }
+.back-link:hover { text-decoration: underline; }
+.gallery-title { color: #2e7d32; margin: 25px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #d7f1d8; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 15px; }
+.shot { border: 1px solid #e3e3e3; background: #fff; overflow: hidden; }
+.shot a { display: block; cursor: zoom-in; }
+.shot img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .25s ease; }
+.shot a:hover img, .shot a:focus-visible img { transform: scale(1.05); }
+.shot a:focus-visible { outline: 3px solid #2e7d32; outline-offset: -3px; }
+
+.lightbox { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.88); display: none;
+  align-items: center; justify-content: center; flex-direction: column; padding: 20px; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 100%; max-height: 82vh; object-fit: contain; background: #111; }
+.lightbox p { color: #fff; margin-top: 12px; text-align: center; font-size: .95rem; }
+.lightbox button { position: absolute; background: rgba(255,255,255,.15); color: #fff; border: 0; cursor: pointer;
+  font-size: 28px; width: 46px; height: 46px; border-radius: 50%; }
+.lightbox button:hover { background: #4CAF50; }
+.lightbox .lb-close
+ { top: 15px; right: 15px;}
+.lightbox .lb-prev { left: 15px; top: 50%; }
+.lightbox .lb-next { right: 15px; top: 50%; }
+@media (max-width: 800px) {
+  .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .lightbox { padding: 14px; }
+}
+
+@media (max-width: 600px) {
+  main { width: 96%; }
+  .products { padding: 16px 10px; }
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .lightbox .lb-prev { left: 8px; }
+  .lightbox .lb-next { right: 8px; }
+}

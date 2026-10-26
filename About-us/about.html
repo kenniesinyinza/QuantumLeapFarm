@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | QuantumLeap Farm</title>
+    <link rel="icon" href="../IMAGE/icon/logo.svg" type="image/svg+xml">
+    <meta name="description" content="QuantumLeap Farm - poultry, piggery and horticulture in Ndola, Zambia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Home/style/index.css">
+    <script src="../Home/js/i18n.js" defer></script>
+    <script src="../Home/js/site-auth.js" defer></script>
+    <script src="../Home/js/screenreader.js" defer></script>
+    <script src="../Home/js/nav.js" defer></script>
+    <style>
+        .about-hero {
+            margin-top: 15px;
+        }
+
+        .about-panel {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .about-panel h2 {
+            margin-bottom: 15px;
+            color: #2e7d32;
+        }
+
+        .about-panel p {
+            margin-bottom: 14px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size:18px;
+            color:black;        }
+
+        .about-panel img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+
+        .about-values {
+            text-align: center;
+        }
+
+        .about-values .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .about-values .service {
+            width: 220px;
+        }
+
+        .button-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .button-secondary {
+            background: transparent;
+            color: #2e7d32;
+            border: 2px solid #2e7d32;
+        }
+
+        .button-secondary:hover {
+            background: #2e7d32;
+            color: white;
+        }
+
+        .about-summary {
+            margin-top: 15px;
+            padding: 30px;
+            border: 1px solid #d7f1d8;
+            text-align: center;
+            background: white;
+        }
+
+        .about-summary p {
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size:18px;
+            color:black;
+        }
+
+        @media (max-width: 800px) {
+            .about-panel {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="../IMAGE/icon/logo.svg" alt="QuantumLeap Farm Logo">
+            <div class="brand-name">
+                <h2>QuantumLeap Farm</h2>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Home/index.html" data-i18n="home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#products" data-i18n="products">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="../Products/egg/egg.html" data-i18n="eggs">Eggs</a></li>
+                        <li><a href="../Products/Chicken/chicken.html" data-i18n="chicken">Chicken</a></li>
+                        <li><a href="../Products/Pork/pork.html" data-i18n="pork">Pork</a></li>
+                        <li><a href="../Products/vegetable/vegetable.html" data-i18n="vegetables">Vegetables</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#services" data-i18n="services">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="../Services/poulty.html" data-i18n="poultry">Poultry</a></li>
+                        <li><a href="../Services/piggery.html" data-i18n="piggery">Piggery</a></li>
+                        <li><a href="../Services/hortculture.html" data-i18n="horticulture">Horticulture</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#about" data-i18n="about">About Us</a>
+                </li>
+
+                <li class="nav-icon-item">
+                    <button class="nav-icon-button" type="button" aria-label="Profile menu" aria-expanded="false">
+                        <img src="../IMAGE/icon/profile.jpg" alt="Profile" class="nav-icon-img">
+                    </button>
+                    <ul class="dropdown nav-dropdown">
+                        <li><a href="../Profile/sign-in.html" data-i18n="signin">Sign In</a></li>
+                        <li><a href="../Profile/sign-out.html" data-i18n="signup">Sign Up</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-icon-item">
+                    <button class="nav-icon-button" type="button" aria-label="Language menu" aria-expanded="false">
+                        <img src="../IMAGE/icon/langu.png" alt="Language" class="nav-icon-img">
+                    </button>
+                    <ul class="dropdown nav-dropdown">
+                        <li><a href="?lang=en" data-lang="en" lang="en">English</a></li>
+                        <li><a href="?lang=bem" data-lang="bem" lang="bem">Icibemba</a></li>
+                        <li><a href="?lang=ny" data-lang="ny" lang="ny">Chinyanja</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero about-hero" id="about">
+            <img src="../IMAGE/farmerland/landscape.jpg" alt="Healthy farm landscape">
+            <div class="hero-content">
+                <h1 data-i18n="abouttitle">About QuantumLeap Farm</h1>
+                <p data-i18n="abouttagline">Growing quality agriculture and connecting communities.</p>
+                <div class="button-row">
+                    <a href="../Home/index.html" class="button" data-i18n="backhome">Back Home</a>
+                    <a href="../Products/Chicken/chicken.html" class="button button-secondary" data-i18n="exploreproducts">Explore Products</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="about-story">
+            <h2 class="section-title" data-i18n="whoweare">Who We Are</h2>
+            <div class="about-panel">
+                <div>
+                    <p data-i18n="aboutintro1">
+                        Quantum Leap Farms is an agricultural enterprise based in Ndola, Zambia. We focus on
+                        producing healthy, sustainable farm products that support households, businesses, and communities.
+                    </p>
+                    <p data-i18n="aboutintro2">
+                        Our farm brings together modern growing practices, reliable service, and a strong commitment to quality.
+                        We believe agriculture should be productive, honest, and accessible to everyone.
+                    </p>
+                </div>
+                <img src="../IMAGE/farmerland/watering.jpg" alt="Farm workers in the field">
+            </div>
+        </section>
+
+        <section class="services about-values">
+            <h2 class="section-title" data-i18n="ourvalues">Our Values</h2>
+            <div class="service-container">
+                <div class="service">
+                    <div class="service-image"><span class="service-caption" data-i18n="quality">Quality</span></div>
+                    <h3 data-i18n="quality">Quality</h3>
+                </div>
+                <div class="service">
+                    <div class="service-image"><span class="service-caption" data-i18n="integrity">Integrity</span></div>
+                    <h3 data-i18n="integrity">Integrity</h3>
+                </div>
+                <div class="service">
+                    <div class="service-image"><span class="service-caption" data-i18n="sustainability">Sustainability</span></div>
+                    <h3 data-i18n="sustainability">Sustainability</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-summary">
+            <h2 class="section-title" data-i18n="whatwedo">What We Do</h2>
+            <p data-i18n="aboutsummary">
+                Quantum Leap Farms focuses on agricultural production and supplying quality farm products to individuals,
+                businesses, and local communities. We are committed to responsible farming practices while continuously improving
+                our methods, service, and customer experience.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+                <h3 data-i18n="about">About Us</h3>
+                <p data-i18n="footerp">Quantum Leap Farm is committed to producing quality agricultural products and feeding communities.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3 data-i18n="quick">Quick Links</h3>
+                <ul>
+                    <li><a href="../Home/index.html" data-i18n="home">Home</a></li>
+                    <li><a href="../About-us/about.html" data-i18n="about">About Us</a></li>
+                    <li><a href="../Products/Chicken/chicken.html" data-i18n="product">Product</a></li>
+                    <li><a href="../Services/hortculture.html" data-i18n="services">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 data-i18n="contact">Contact Us</h3>
+                <ul>
+                    <li>+260 978 274 092</li>
+                    <li>info@quantumleapfarm.com</li>
+                    <li>Plot No. L/37301/M, off</li>
+                    <li>Ndola–Kitwe Road, Ndola.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="copyright" data-i18n="copy">© 2026 QuantumLeap Farm. All rights reserved.</p>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+/storage/*.sqlite
+/storage/*.sqlite-*
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Dependencies
+node_modules/
+
+# Local backups and archives
+*.zip
+*.rar
+*.7z
+
+# Private storage contents
+storage/logs/
+storage/tmp/
+storage/backups/
+
+# Local database exports
+*.dump

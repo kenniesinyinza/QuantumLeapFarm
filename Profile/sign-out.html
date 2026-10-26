@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Home/style/form.css">
+    <script src="../Home/js/i18n.js" defer></script>
+    <script src="../Home/js/screenreader.js" defer></script>
+    <script src="../Home/js/auth.js" defer></script>
+</head>
+
+<body class="sign-up-page">
+<div class="lang-mini"><a href="?lang=en" data-lang="en">EN</a><a href="?lang=ny" data-lang="ny">NY</a><a href="?lang=bem" data-lang="bem">BEM</a></div>
+
+    <div class="form-box">
+
+        <h2 data-i18n="signup">Sign Up</h2>
+
+        <p class="form-status" data-auth-required role="status" aria-live="polite" hidden>Please sign in or sign up to view this product.</p>
+
+        <form method="post" action="../api/auth.php" data-auth-form="signup">
+
+            <input type="hidden" name="action" value="signup">
+            <input type="email" name="email" autocomplete="email" placeholder="Email" data-i18n-ph="email" required>
+
+            <div class="password-box">
+                <input type="password" name="password" autocomplete="new-password" placeholder="Create password" data-i18n-ph="create" minlength="8" maxlength="72" required>
+                <button type="button" class="password-toggle" data-password-toggle aria-label="Show password">Show</button>
+            </div>
+
+            <div class="password-box">
+                <input type="password" name="confirmPassword" autocomplete="new-password" placeholder="Confirm password" data-i18n-ph="confirm" minlength="8" maxlength="72" required>
+                <button type="button" class="password-toggle" data-password-toggle aria-label="Show password">Show</button>
+            </div>
+
+            <p class="form-status" data-auth-status role="status" aria-live="polite" hidden></p>
+
+            <button type="submit" data-i18n="signup">Sign Up</button>
+
+            <p class="account">
+                <span data-i18n="hasacct">Already have an account?</span>
+                <a href="sign-in.html" data-auth-switch data-i18n="signin">Sign In</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

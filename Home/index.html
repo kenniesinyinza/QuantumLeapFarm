@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUANTUMLEAP-FARM</title>
+    <link rel="icon" href="../IMAGE/icon/logo.svg" type="image/svg+xml">
+    <meta name="description" content="QuantumLeap Farm - poultry, piggery and horticulture in Ndola, Zambia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/i18n.js" defer></script>
+    <script src="js/site-auth.js" defer></script>
+    <script src="js/product-access.js" defer></script>
+    <script src="js/screenreader.js" defer></script>
+    <script src="js/nav.js" defer></script>
+
+  
+</head>
+
+
+<body>
+
+
+
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo-area">
+
+            <img
+                src="../IMAGE/icon/logo.svg"
+                alt="QuantumLeap Farm Logo">
+
+                 <div class="brand-name">
+            <h2>QUANTUMLEAP FARM</h2>
+        </div>
+
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <nav>
+
+            <ul>
+
+                <!-- HOME -->
+                <li>
+                    <a href="#home" data-i18n="home">Home</a>
+                </li>
+
+
+                <!-- PRODUCTS -->
+                <li>
+
+                    <a href="#products" data-i18n="products">Products</a>
+
+                    <ul class="dropdown">
+
+                        <li>
+                            <a href="../Products/egg/egg.html" data-i18n="eggs">Eggs</a>
+                        </li>
+
+                        <li>
+                            <a href="../Products/Chicken/chicken.html" data-i18n="chicken">Chicken</a>
+                        </li>
+
+                        <li>
+                            <a href="../Products/Pork/pork.html" data-i18n="pork">Pork</a>
+                        </li>
+
+                        <li>
+                            <a href="../Products/vegetable/vegetable.html" data-i18n="vegetables">Vegetables</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- SERVICES -->
+                <li>
+
+                    <a href="#services" data-i18n="services">Services</a>
+
+                    <ul class="dropdown">
+
+                        <li>
+                            <a href="#poultry" data-i18n="poultry">Poultry</a>
+                        </li>
+
+                        <li>
+                            <a href="#piggery" data-i18n="piggery">Piggery</a>
+                        </li>
+
+                        <li>
+                            <a href="#horticulture" data-i18n="horticulture">Horticulture</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="../About-us/about.html" data-i18n="about">About Us</a>
+                </li>
+
+
+                <!-- PROFILE -->
+                <li class="nav-icon-item">
+                    <button class="nav-icon-button" type="button" aria-label="Profile menu" aria-expanded="false">
+                        <img src="../IMAGE/icon/profile.jpg" alt="Profile" class="nav-icon-img">
+                    </button>
+
+                    <ul class="dropdown nav-dropdown">
+                        <li>
+                            <a href="../Profile/sign-in.html" data-i18n="signin">Sign In</a>
+                        </li>
+
+                        <li>
+                            <a href="../Profile/sign-out.html" data-i18n="signup">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <!-- LANGUAGE -->
+                <li class="nav-icon-item">
+                    <button class="nav-icon-button" type="button" aria-label="Language menu" aria-expanded="false">
+                        <img src="../IMAGE/icon/langu.png" alt="Language" class="nav-icon-img">
+                    </button>
+
+                    <ul class="dropdown nav-dropdown">
+                        <li>
+                            <a href="?lang=en" data-lang="en" lang="en">English</a>
+                        </li>
+
+                        <li>
+                            <a href="?lang=bem" data-lang="bem" lang="bem">Icibemba</a>
+                        </li>
+
+                        <li>
+                            <a href="?lang=ny" data-lang="ny" lang="ny">Chinyanja</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+         ================================================== -->
+
+    <main>
+
+
+        <!-- ================= HOME / HERO ================= -->
+
+        <section class="hero" id="home">
+
+            <img
+                src="../IMAGE/vegetables/feed of maize.jpg"
+                alt="Green agricultural farm">
+
+            <div class="hero-content">
+
+                <h1 data-i18n="welcome">Welcome to QuantumLeap Farm</h1>
+
+                <p data-i18n="tagline">Growing quality, feeding communities</p>
+
+                <a href="#about" class="button" data-i18n="learn">Learn More</a>
+
+            </div>
+
+        </section>
+
+
+        <!--  PRODUCTS-->
+
+        <section class="products" id="products">
+
+            <h2 class="section-title" data-i18n="ourproducts">Our Products</h2>
+
+
+            <div class="product-container">
+
+
+                <article class="product-card" id="eggs">
+                    <img src="../IMAGE/chicken/EG.webp" alt="Tray of fresh farm eggs" loading="lazy">
+                    <h3 data-i18n="eggs">Eggs</h3>
+                    <p data-i18n="d_eggs">Fresh eggs from our farm.</p>
+                    <a href="../Products/egg/egg.html" class="button" data-i18n="view">View Product</a>
+                </article>
+
+                <!--vegetables-->
+
+                <article class="product-card" id="vegetables">
+
+                    <img
+                        src="../IMAGE/vegetables/HORT.jpg"
+                        alt="Fresh vegetables" loading="lazy">
+
+                    <h3 data-i18n="vegetables">Vegetables</h3>
+
+                    <p data-i18n="d_veg">Fresh vegetables from our farm.</p>
+
+                    <a href="../Products/vegetable/vegetable.html" class="button" data-i18n="view">View Product</a>
+
+                </article>
+
+
+                <!-- CHICKEN -->
+
+                <article class="product-card" id="chicken">
+
+                    <img
+                        src="../IMAGE/chicken/chickenbrown.avif"
+                        alt="Farm chicken" loading="lazy">
+
+                    <h3 data-i18n="chicken">Chicken</h3>
+
+                    <p data-i18n="d_chicken">Quality poultry products from our farm.</p>
+
+                    <a href="../Products/Chicken/chicken.html" class="button" data-i18n="view">View Product</a>
+
+                </article>
+
+
+                <!-- PORK -->
+
+                <article class="product-card" id="pork">
+
+                    <img
+                        src="../IMAGE/pig/PIG.jpg"
+                        alt="Pigs on the farm" loading="lazy">
+
+                    <h3 data-i18n="pork">Pork</h3>
+
+                    <p data-i18n="d_pork">Quality pork products from our piggery.</p>
+
+                    <a href="../Products/Pork/pork.html" class="button" data-i18n="view">View Product</a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section class="services" id="services">
+
+            <h2 class="section-title" data-i18n="ourservices">Our Services</h2>
+
+
+            <div class="service-container">
+
+
+                <!-- POULTRY -->
+
+                <div class="service" id="poultry">
+
+                    <a href="#poultry">
+
+                        <div class="service-image">
+                            <span class="service-caption">
+                               Modern poultry houses 
+                               ensuring healthy birds
+                               and quality meet.
+                            </span>
+                        </div>
+
+                        <h3 data-i18n="poultry">Poultry</h3>
+
+                    </a>
+
+                </div>
+
+
+                <!-- PIGGERY -->
+
+                <div class="service" id="piggery">
+
+                    <a href="#piggery">
+
+                        <div class="service-image">
+                            <span class="service-caption" data-i18n="c_piggery">Well-managed piggery for healthy pork production.</span>
+                        </div>
+
+                        <h3 data-i18n="piggery">Piggery</h3>
+
+                    </a>
+
+                </div>
+
+
+                <!-- HORTICULTURE -->
+
+                <div class="service" id="horticulture">
+
+                    <a href="#horticulture">
+
+                        <div class="service-image">
+                            <span class="service-caption">
+                                We grow fresh vegetable
+                                using good agriculture
+                                 practices
+                            </span>
+                        </div>
+
+                        <h3 data-i18n="horticulture">Horticulture</h3>
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!--  ABOUT US  -->
+
+        <section class="about" id="about">
+
+            <h2 class="section-title" data-i18n="abouttitle">About QuantumLeap Farm</h2>
+
+            <p data-i18n="aboutp">QuantumLeap Farm is an agricultural enterprise focused on providing quality farm products and services. Our main activities include poultry, piggery and horticulture where we produce fresh and healthy agricultural products through modern and sustainable farming practices.</p>
+
+            <a href="../About-us/about.html" class="button" data-i18n="about">About Us</a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="site-footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+                <h3 data-i18n="about">About Us</h3>
+                <p data-i18n="footerp">Quantum Leap Farm is committed to producing quality agricultural products and feeding communities.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3 data-i18n="quick">Quick Links</h3>
+                <ul>
+                    <li><a href="#home" data-i18n="home">Home</a></li>
+                    <li><a href="../About-us/about.html" data-i18n="about">About Us</a></li>
+                    <li><a href="#products" data-i18n="product">Product</a></li>
+                    <li><a href="#services" data-i18n="services">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 data-i18n="contact">Contact Us</h3>
+                <ul>
+                    <li>+260 978 274 092</li>
+                    <li>info@quantumleapfarm.com</li>
+                    <li>Plot No. L/37301/M, off</li>
+                    <li>Ndola–Kitwe Road, Ndola.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="copyright" data-i18n="copy">© 2026 QuantumLeap Farm. All rights reserved.</p>
+
+    </footer>
+
+
+</body>
+
+</html>

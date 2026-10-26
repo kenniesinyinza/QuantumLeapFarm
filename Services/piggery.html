@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>piggery | Quantumleap farm</title>
+    <link rel="icon" href="../IMAGE/icon/logo.svg" type="image/svg+xml">
+    <meta name="description" content="QuantumLeap Farm piggery services in Ndola, Zambia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Home/style/index.css">
+    <link rel="stylesheet" href="../Home/style/piggery.css">
+    <script src="../Home/js/i18n.js" defer></script>
+    <script src="../Home/js/site-auth.js" defer></script>
+    <script src="../Home/js/screenreader.js" defer></script>
+    <script src="../Home/js/nav.js" defer></script>
+    <style>
+        .piggery-page .hero {
+            height: auto;
+            min-height: 0;
+            margin: 20px 0;
+            overflow: visible;
+            border: 0;
+        }
+
+        .piggery-page .hero-img img {
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="../IMAGE/icon/logo.svg" alt="QuantumLeap Farm Logo">
+            <div class="brand-name">
+                <h2>QuantumLeap Farm</h2>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../Home/index.html" data-i18n="home">Home</a></li>
+                <li>
+                    <a href="#products" data-i18n="products">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="../Products/egg/egg.html" data-i18n="eggs">Eggs</a></li>
+                        <li><a href="../Products/Chicken/chicken.html" data-i18n="chicken">Chicken</a></li>
+                        <li><a href="../Products/Pork/pork.html" data-i18n="pork">Pork</a></li>
+                        <li><a href="../Products/vegetable/vegetable.html" data-i18n="vegetables">Vegetables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#services" data-i18n="services">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="../Services/poulty.html" data-i18n="poultry">Poultry</a></li>
+                        <li><a href="../Services/piggery.html" data-i18n="piggery">Piggery</a></li>
+                        <li><a href="../Services/hortculture.html" data-i18n="horticulture">Horticulture</a></li>
+                    </ul>
+                </li>
+                <li><a href="../About-us/about.html" data-i18n="about">About Us</a></li>
+                <li class="nav-icon-item">
+                    <button class="nav-icon-button" type="button" aria-label="Profile menu" aria-expanded="false">
+                        <img src="../IMAGE/icon/profile.jpg" alt="Profile" class="nav-icon-img">
+                    </button>
+                    <ul class="dropdown nav-dropdown">
+                        <li><a href="../Profile/sign-in.html" data-i18n="signin">Sign In</a></li>
+                        <li><a href="../Profile/sign-out.html" data-i18n="signup">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li class="nav-icon-item">
+                    <button class="nav-icon-button" type="button" aria-label="Language menu" aria-expanded="false">
+                        <img src="../IMAGE/icon/langu.png" alt="Language" class="nav-icon-img">
+                    </button>
+                    <ul class="dropdown nav-dropdown">
+                        <li><a href="?lang=en" data-lang="en" lang="en">English</a></li>
+                        <li><a href="?lang=bem" data-lang="bem" lang="bem">Icibemba</a></li>
+                        <li><a href="?lang=ny" data-lang="ny" lang="ny">Chinyanja</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="piggery-page">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <span class="tag" data-i18n="piggerytag">Smart Piggery, Sustainable Future</span>
+            <h1 data-i18n="piggerytitle">Raising Healthy Pigs. Growing Quality Farms.</h1>
+            <p data-i18n="piggerydescription">We provide quality pig farming services from breeding and feeding to proper animal care, helping farmers maintain healthy and productive pigs.</p>
+            <a href="../Products/Pork/pork.html" class="product-btn" data-i18n="ourproducts">Our Products</a>
+        </div>
+        <div class="hero-img">
+            <img src="../IMAGE/pig/img1.jpg" alt="img1">
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stat">
+            <h3>200+</h3>
+            <p data-i18n="pigsraised">Pigs Raised Annually</p>
+        </div>
+        <div class="stat">
+            <h3>10+</h3>
+            <p data-i18n="yearsexperience">Years of Experience</p>
+        </div>
+        <div class="stat">
+            <h3>100%</h3>
+            <p data-i18n="qualityassured">Quality Assured</p>
+        </div>
+        <div class="stat">
+            <h3>5</h3>
+            <p data-i18n="coreservices">Core Services</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section" id="services">
+        <h2 data-i18n="ourservices">Our Services</h2>
+        <ul class="services-list">
+            <li data-i18n="pigservice1">Pig breeding and genetics management</li>
+            <li data-i18n="pigservice2">Balanced feeding programs for healthy growth</li>
+            <li data-i18n="pigservice3">Veterinary care and disease prevention</li>
+            <li data-i18n="pigservice4">Farrowing and piglet care</li>
+            <li data-i18n="pigservice5">Farm hygiene and waste management</li>
+        </ul>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section">
+        <h2 data-i18n="gallerytitle">Gallery</h2>
+        <div class="gallery-grid">
+            <img src="../IMAGE/pig/img1.jpg" alt="img1">
+            <img src="../IMAGE/pig/img2.jpg" alt="img2">
+            <img src="../IMAGE/pig/img3.jpg" alt="img3">
+            <img src="../IMAGE/pig/img4.jpg" alt="img4">
+        </div>
+    </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3 data-i18n="about">About Us</h3>
+                <p data-i18n="footerp">Quantum Leap Farm is committed to producing quality agricultural products and feeding communities.</p>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="quick">Quick Links</h3>
+                <ul>
+                    <li><a href="../Home/index.html" data-i18n="home">Home</a></li>
+                    <li><a href="../About-us/about.html" data-i18n="about">About Us</a></li>
+                    <li><a href="../Products/Chicken/chicken.html" data-i18n="product">Product</a></li>
+                    <li><a href="../Services/hortculture.html" data-i18n="services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="contact">Contact Us</h3>
+                <ul>
+                    <li>+260 978 274 092</li>
+                    <li>info@quantumleapfarm.com</li>
+                    <li>Plot No. L/37301/M, off</li>
+                    <li>Ndola–Kitwe Road, Ndola.</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright" data-i18n="copy">© 2026 QuantumLeap Farm. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
