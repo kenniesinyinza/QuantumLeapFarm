@@ -37,6 +37,8 @@
             width: 90%;
             margin: 20px auto 0;
             background-color: white;
+            position: relative;
+            z-index: 1000;
         }
 
 
@@ -76,6 +78,8 @@
 
         nav {
             background-color: #2e7d32;
+            position: relative;
+            z-index: 1001;
         }
 
         nav > ul {
@@ -93,6 +97,10 @@
 
         nav ul li {
             position: relative;
+        }
+
+        nav ul li.open {
+            z-index: 1002;
         }
 
         nav ul li a {
@@ -455,19 +463,20 @@ nav ul li a:focus-visible, .button:focus-visible { outline: 3px solid #2e7d32; o
   .brand-name { padding: 8px; }
   .brand-name h1, .brand-name h2 { font-size: clamp(1.15rem, 5vw, 1.5rem); }
 
-  nav { overflow-x: auto; }
+  nav { overflow: visible; }
   nav > ul {
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 0;
-    width: max-content;
+    width: 100%;
     min-width: 100%;
   }
-  nav > ul > li { flex: 0 0 auto; text-align: center; }
+  nav > ul > li { flex: 0 1 auto; min-width: 0; text-align: center; }
+  nav > ul > li.nav-icon-item { flex: 0 0 38px; }
   nav > ul > li:nth-last-child(2) { margin-left: 0; }
-  nav ul li a { padding: 10px 8px; font-size: 0.9rem; white-space: nowrap; }
+  nav ul li a { padding: 10px 3px; font-size: 0.78rem; white-space: nowrap; }
   .nav-icon-item { min-height: 50px; }
-  .dropdown { left: 0; top: 100%; transform: none; width: max-content; min-width: 180px; max-width: calc(100vw - 16px); }
+  .dropdown { left: 0; top: 100%; transform: none; width: max-content; min-width: 180px; max-width: calc(100vw - 16px); background-color: #fff; }
   .nav-dropdown { left: auto; right: 0; width: 180px; }
   nav ul li:hover > .dropdown { display: none; }
   nav ul li.open > .dropdown,
