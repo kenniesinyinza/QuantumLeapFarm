@@ -455,13 +455,20 @@ nav ul li a:focus-visible, .button:focus-visible { outline: 3px solid #2e7d32; o
   .brand-name { padding: 8px; }
   .brand-name h1, .brand-name h2 { font-size: clamp(1.15rem, 5vw, 1.5rem); }
 
-  nav > ul { gap: 0; }
-  nav > ul > li { flex: 1 1 50%; text-align: center; }
+  nav { overflow-x: auto; }
+  nav > ul {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0;
+    width: max-content;
+    min-width: 100%;
+  }
+  nav > ul > li { flex: 0 0 auto; text-align: center; }
   nav > ul > li:nth-last-child(2) { margin-left: 0; }
-  nav ul li a { padding: 10px 8px; }
+  nav ul li a { padding: 10px 8px; font-size: 0.9rem; white-space: nowrap; }
   .nav-icon-item { min-height: 50px; }
-  .dropdown { left: 0; top: 100%; transform: none; width: 100%; min-width: 0; }
-  .nav-dropdown { width: 100%; }
+  .dropdown { left: 0; top: 100%; transform: none; width: max-content; min-width: 180px; max-width: calc(100vw - 16px); }
+  .nav-dropdown { left: auto; right: 0; width: 180px; }
   nav ul li:hover > .dropdown { display: none; }
   nav ul li.open > .dropdown,
   nav ul li:focus-within > .dropdown { display: block; }
@@ -493,6 +500,5 @@ nav ul li a:focus-visible, .button:focus-visible { outline: 3px solid #2e7d32; o
 }
 
 @media (max-width: 360px) {
-  nav > ul > li { flex-basis: 100%; }
   .hero-content { padding: 14px; }
 }
