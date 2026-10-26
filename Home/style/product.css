@@ -1,5 +1,4 @@
 /* Product pages: photo galleries + lightbox (loads after index.css) */
-body.product-access-pending main { visibility: hidden; }
 .page-head { text-align: center; margin-bottom: 20px; }
 .page-head p { max-width: 700px; margin: 0 auto 12px; }
 .back-link { display: inline-block; margin-bottom: 15px; color: #2e7d32; font-weight: bold; }

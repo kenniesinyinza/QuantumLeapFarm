@@ -6,27 +6,6 @@
     var submitButton = form.querySelector('button[type="submit"]');
     var action = form.getAttribute("data-auth-form");
     var apiUrl = new URL("../api/auth.php", window.location.href);
-    var query = new URLSearchParams(window.location.search);
-    var returnTo = query.get("returnTo");
-    var requiredMessage = document.querySelector("[data-auth-required]");
-
-    function safeProductReturnUrl(value) {
-        if (!value) return null;
-        var destination = new URL(value, window.location.href);
-        if (destination.origin !== window.location.origin || destination.pathname.toLowerCase().indexOf("/products/") === -1) return null;
-        return destination.href;
-    }
-
-    if (requiredMessage && query.get("required") === "1") {
-        requiredMessage.hidden = false;
-    }
-
-    document.querySelectorAll("[data-auth-switch]").forEach(function (link) {
-        if (query.get("required") !== "1") return;
-        var destination = new URL(link.href, window.location.href);
-        destination.search = window.location.search;
-        link.href = destination.href;
-    });
 
     function showStatus(message, isError) {
         status.textContent = message;
@@ -75,10 +54,10 @@
                 showStatus(result.error || "The request could not be completed.", true);
                 return;
             }
-            window.location.href = safeProductReturnUrl(returnTo) || "../Home/index.html";
+            window.location.href = "../Home/index.html";
         } catch (error) {
             console.error("Authentication request failed:", error);
-            showStatus("Could not connect to the server. Start the local PHP server and try again.", true);
+            showStatus("The sign-in service is unavailable. Live Server cannot run PHP. Close Live Server, run start-local.bat, and open http://127.0.0.1:8000.", true);
         } finally {
             submitButton.disabled = false;
         }
